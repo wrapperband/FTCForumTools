@@ -25,7 +25,7 @@ sudo ./IPBlacklist-add.sh
 ### To clear the bans :  
 sudo ./IPBlacklist-add.sh  
 
-##  For information on the bans you can run :
+##  For information on the ban's status, you can run :
 
 sudo iptables -L
 
