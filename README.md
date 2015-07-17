@@ -19,9 +19,12 @@ chmod +x IPBlacklist-add.sh
   
 chmod +x IPBlacklist-drop.sh  
   
+*** To add the bans :  
 sudo ./IPBlacklist-add.sh  
   
-  
+*** To clear the bans :  
+sudo ./IPBlacklist-add.sh  
+
 ##  For information on the bans you can run :
 
 sudo iptables -L
