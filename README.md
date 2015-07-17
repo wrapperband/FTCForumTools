@@ -11,17 +11,17 @@ The add file contains a line adding each banned IP address, which is run on the 
 
 ##  Using the banlist : 
 
-git clone https://github.com/wrapperband/FTCForumTools
-
-cd IPBlacklist
-
-chmod +x IPBlacklist-add.sh
-
-chmod +x IPBlacklist-drop.sh
-
-sudo ./IPBlacklist-add.sh
-
-
+git clone https://github.com/wrapperband/FTCForumTools   
+  
+cd IPBlacklist  
+  
+chmod +x IPBlacklist-add.sh  
+  
+chmod +x IPBlacklist-drop.sh  
+  
+sudo ./IPBlacklist-add.sh  
+  
+  
 ##  For information on the bans you can run :
 
 sudo iptables -L
@@ -29,13 +29,13 @@ sudo iptables -L
 
 ##  To clear all IPTables bans, if something went wrong :
 
-iptables -F
-iptables -X
-iptables -t nat -F
-iptables -t nat -X
-iptables -t mangle -F
-iptables -t mangle -X
-iptables -P INPUT ACCEPT
-iptables -P FORWARD ACCEPT
-iptables -P OUTPUT ACCEPT
+iptables -F  
+iptables -X  
+iptables -t nat -F  
+iptables -t nat -X  
+iptables -t mangle -F  
+iptables -t mangle -X  
+iptables -P INPUT ACCEPT  
+iptables -P FORWARD ACCEPT  
+iptables -P OUTPUT ACCEPT  
 
