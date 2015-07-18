@@ -11,6 +11,8 @@ iptables -D INPUT -s 	5.101.140.226	 -j DROP
 iptables -D INPUT -s 	5.157.14.79	 -j DROP
 iptables -D INPUT -s 	5.175.176.0/24	 -j DROP
 iptables -D INPUT -s 	5.175.219.74	 -j DROP
+iptables -D INPUT -s 	5.231.76.125	 -j DROP
+iptables -D INPUT -s 	5.255.75.0/24	 -j DROP
 iptables -D INPUT -s 	8.25.14.2	 -j DROP
 iptables -D INPUT -s 	14.0.0.45	 -j DROP
 iptables -D INPUT -s 	14.0.20.172	 -j DROP
@@ -23,6 +25,7 @@ iptables -D INPUT -s 	23.94.52.93	 -j DROP
 iptables -D INPUT -s 	23.94.116.18	 -j DROP
 iptables -D INPUT -s 	23.95.62.40	 -j DROP
 iptables -D INPUT -s 	23.95.112.21	 -j DROP
+iptables -D INPUT -s 	23.95.223.0/24	 -j DROP
 iptables -D INPUT -s 	23.98.70.215	 -j DROP
 iptables -D INPUT -s 	23.254.43.64/26	 -j DROP
 iptables -D INPUT -s 	24.214.240.43	 -j DROP
@@ -34,6 +37,7 @@ iptables -D INPUT -s 	31.181.162.245	 -j DROP
 iptables -D INPUT -s 	31.181.180.122	 -j DROP
 iptables -D INPUT -s 	37.9.53.91	 -j DROP
 iptables -D INPUT -s 	37.58.0.0/16	 -j DROP
+iptables -D INPUT -s 	37.72.188.162	 -j DROP
 iptables -D INPUT -s 	37.204.0.0/16	 -j DROP
 iptables -D INPUT -s 	39.36.0.0/16	 -j DROP
 iptables -D INPUT -s 	39.46.0.0/16	 -j DROP
@@ -131,6 +135,7 @@ iptables -D INPUT -s 	82.146.55.80	 -j DROP
 iptables -D INPUT -s 	82.147.214.162	 -j DROP
 iptables -D INPUT -s 	82.148.18.122	 -j DROP
 iptables -D INPUT -s 	82.165.128.189	 -j DROP
+iptables -D INPUT -s 	82.192.30.245	 -j DROP
 iptables -D INPUT -s 	82.209.175.116	 -j DROP
 iptables -D INPUT -s 	82.221.102.179	 -j DROP
 iptables -D INPUT -s 	82.221.109.67	 -j DROP
@@ -147,6 +152,7 @@ iptables -D INPUT -s 	87.117.189.57	 -j DROP
 iptables -D INPUT -s 	88.86.71.6	 -j DROP
 iptables -D INPUT -s 	88.150.239.4	 -j DROP
 iptables -D INPUT -s 	89.19.7.66	 -j DROP
+iptables -D INPUT -s 	89.36.65.186	 -j DROP
 iptables -D INPUT -s 	89.107.137.128	 -j DROP
 iptables -D INPUT -s 	89.107.226.28	 -j DROP
 iptables -D INPUT -s 	89.184.31.161	 -j DROP
@@ -159,6 +165,7 @@ iptables -D INPUT -s 	91.192.73.189	 -j DROP
 iptables -D INPUT -s 	91.194.84.124	 -j DROP
 iptables -D INPUT -s 	91.199.0.0/16	 -j DROP
 iptables -D INPUT -s 	91.200.0.0/16	 -j DROP
+iptables -D INPUT -s 	91.200.12.38	 -j DROP
 iptables -D INPUT -s 	91.220.131.33	 -j DROP
 iptables -D INPUT -s 	91.236.74.164	 -j DROP
 iptables -D INPUT -s 	91.240.163.39	 -j DROP
@@ -166,6 +173,7 @@ iptables -D INPUT -s 	92.46.62.131	 -j DROP
 iptables -D INPUT -s 	92.127.0.0/16	 -j DROP
 iptables -D INPUT -s 	92.253.49.147	 -j DROP
 iptables -D INPUT -s 	93.72.9.133	 -j DROP
+iptables -D INPUT -s 	93.118.70.106	 -j DROP
 iptables -D INPUT -s 	93.170.147.174	 -j DROP
 iptables -D INPUT -s 	93.171.202.90	 -j DROP
 iptables -D INPUT -s 	93.174.93.116	 -j DROP
@@ -190,7 +198,9 @@ iptables -D INPUT -s 	103.27.24.106	 -j DROP
 iptables -D INPUT -s 	103.41.124.0/24	 -j DROP
 iptables -D INPUT -s 	103.49.174.61	 -j DROP
 iptables -D INPUT -s 	104.143.21.214	 -j DROP
+iptables -D INPUT -s 	107.150.44.26	 -j DROP
 iptables -D INPUT -s 	107.182.120.242	 -j DROP
+iptables -D INPUT -s 	107.169.224.55	 -j DROP
 iptables -D INPUT -s 	108.61.122.139	 -j DROP
 iptables -D INPUT -s 	108.171.251.34	 -j DROP
 iptables -D INPUT -s 	108.178.27.242	 -j DROP
@@ -259,15 +269,19 @@ iptables -D INPUT -s 	128.199.255.28	 -j DROP
 iptables -D INPUT -s 	129.121.177.191	 -j DROP
 iptables -D INPUT -s 	130.0.232.35	 -j DROP
 iptables -D INPUT -s 	130.185.109.226	 -j DROP
+iptables -D INPUT -s 	130.196.3.237	 -j DROP
+iptables -D INPUT -s 	130.196.70.238	 -j DROP
 iptables -D INPUT -s 	130.206.81.85	 -j DROP
 iptables -D INPUT -s 	139.0.12.151	 -j DROP
 iptables -D INPUT -s 	140.113.110.17	 -j DROP
 iptables -D INPUT -s 	140.206.103.252	 -j DROP
 iptables -D INPUT -s 	144.0.0.0/24	 -j DROP
+iptables -D INPUT -s 	155.133.19.129	 -j DROP
 iptables -D INPUT -s 	162.213.25.66	 -j DROP
 iptables -D INPUT -s 	162.221.227.101	 -j DROP
 iptables -D INPUT -s 	168.143.183.155	 -j DROP
 iptables -D INPUT -s 	171.35.103.5	 -j DROP
+iptables -D INPUT -s 	172.102.192.14	 -j DROP
 iptables -D INPUT -s 	173.208.130.55	 -j DROP
 iptables -D INPUT -s 	173.232.96.20	 -j DROP
 iptables -D INPUT -s 	173.254.223.110	 -j DROP
@@ -349,8 +363,11 @@ iptables -D INPUT -s 	195.210.28.102	 -j DROP
 iptables -D INPUT -s 	196.196.28.0/24	 -j DROP
 iptables -D INPUT -s 	198.12.66.90	 -j DROP
 iptables -D INPUT -s 	198.13.96.234	 -j DROP
+iptables -D INPUT -s 	198.46.193.221 	 -j DROP
 iptables -D INPUT -s 	198.52.210.249	 -j DROP
 iptables -D INPUT -s 	198.71.58.200	 -j DROP
+iptables -D INPUT -s 	198.144.182.198	 -j DROP
+iptables -D INPUT -s 	198.245.49.70	 -j DROP
 iptables -D INPUT -s 	200.27.136.44	 -j DROP
 iptables -D INPUT -s 	200.214.123.178	 -j DROP
 iptables -D INPUT -s 	201.53.107.89	 -j DROP
