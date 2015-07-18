@@ -8,6 +8,7 @@ iptables -D INPUT -s 	5.35.185.199	 -j DROP
 iptables -D INPUT -s 	5.39.64.220	 -j DROP
 iptables -D INPUT -s 	5.79.66.2	 -j DROP
 iptables -D INPUT -s 	5.101.140.226	 -j DROP
+iptables -D INPUT -s 	5.153.235.204	 -j DROP
 iptables -D INPUT -s 	5.157.14.79	 -j DROP
 iptables -D INPUT -s 	5.175.176.0/24	 -j DROP
 iptables -D INPUT -s 	5.175.219.74	 -j DROP
