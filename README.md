@@ -44,8 +44,8 @@ iptables -P OUTPUT ACCEPT
 
 ##  To clear stubborn connections
 
-Sometimes connections that were made, within a range of IPs, will remain after being banned. If there was some connection in that band already.
+Sometimes connections that were made, within a range of IPs, will remain after being banned. If there was some connection in that "IP band" already.
 
-In that case try this for stubborn connections ...
+In that case try this to remove stubborn connections ...
 
 tcpkill host xxx.xxx.xxx.xxx
