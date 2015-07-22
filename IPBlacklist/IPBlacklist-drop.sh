@@ -403,7 +403,7 @@ iptables -D INPUT -s 	192.254.101.74	 -j DROP
 iptables -D INPUT -s 	192.255.69.0/24	 -j DROP
 iptables -D INPUT -s 	193.104.41.0/24	 -j DROP
 iptables -D INPUT -s 	193.107.17.72	 -j DROP
-iptables -D INPUT -s 	193.111.136.162	
+iptables -D INPUT -s 	193.111.136.162	 -j DROP
 iptables -D INPUT -s 	194.1.234.3	 -j DROP
 iptables -D INPUT -s 	194.58.88.39	 -j DROP
 iptables -D INPUT -s 	195.26.78.7	 -j DROP
@@ -411,7 +411,7 @@ iptables -D INPUT -s 	195.130.154.185	 -j DROP
 iptables -D INPUT -s 	195.154.52.139	 -j DROP
 iptables -D INPUT -s 	195.154.77.176	 -j DROP
 iptables -D INPUT -s 	195.154.194.53	 -j DROP
-iptables -D INPUT -s 	195.154.241.124	
+iptables -D INPUT -s 	195.154.241.124	 -j DROP
 iptables -D INPUT -s 	195.210.28.102	 -j DROP
 iptables -D INPUT -s 	196.196.28.0/24	 -j DROP
 iptables -D INPUT -s 	198.12.66.90	 -j DROP
