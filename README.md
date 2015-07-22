@@ -30,7 +30,7 @@ sudo ./IPBlacklist-drop.sh
 sudo iptables -L
 
 
-##  To clear all IPTables bans, if something went wrong :
+##  To clear all IPTables bans, if something went wrong :  
 
 iptables -F  
 iptables -X  
@@ -42,7 +42,7 @@ iptables -P INPUT ACCEPT
 iptables -P FORWARD ACCEPT  
 iptables -P OUTPUT ACCEPT  
 
-##  To clear stubborn connections
+##  To clear stubborn connections :  
 
 Sometimes connections that were made, within a range of IPs, will remain after being banned. If there was some connection in that "IP band" already.
 
