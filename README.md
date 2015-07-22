@@ -23,7 +23,7 @@ chmod +x IPBlacklist-drop.sh
 sudo ./IPBlacklist-add.sh  
 
 ### To clear the bans :  
-sudo ./IPBlacklist-add.sh  
+sudo ./IPBlacklist-drop.sh  
 
 ##  For information on the ban's status, you can run :
 
