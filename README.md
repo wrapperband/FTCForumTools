@@ -13,7 +13,7 @@ The add file contains a line adding each banned IP address, which is run on the 
 
 git clone https://github.com/wrapperband/FTCForumTools   
   
-cd IPBlacklist  
+cd ~/FTCForumTools/IPBlacklist  
   
 chmod +x IPBlacklist-add.sh  
   
