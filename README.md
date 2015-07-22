@@ -42,10 +42,10 @@ iptables -P INPUT ACCEPT
 iptables -P FORWARD ACCEPT  
 iptables -P OUTPUT ACCEPT  
 
-##  To clear stuburn conections
+##  To clear stubborn connections
 
 Sometimes connections that were made, within a range of IPs, will remain after being banned. If there was some connection in that band already.
 
-In that case try this for stuburn connections ...
+In that case try this for stubborn connections ...
 
 tcpkill host xxx.xxx.xxx.xxx
