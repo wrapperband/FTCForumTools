@@ -43,9 +43,7 @@ iptables -A INPUT -s 	24.214.240.43	 -j DROP
 iptables -A INPUT -s 	27.254.66.135	 -j DROP
 iptables -A INPUT -s 	31.25.200.60	 -j DROP
 iptables -A INPUT -s 	31.163.96.58	 -j DROP
-iptables -A INPUT -s 	31.181.88.239	 -j DROP
-iptables -A INPUT -s 	31.181.162.245	 -j DROP
-iptables -A INPUT -s 	31.181.180.122	 -j DROP
+iptables -A INPUT -s 	31.181.0.0/16	 -j DROP
 iptables -A INPUT -s 	37.9.53.91	 -j DROP
 iptables -A INPUT -s 	37.58.0.0/16	 -j DROP
 iptables -A INPUT -s 	37.72.188.162	 -j DROP
