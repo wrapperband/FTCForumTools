@@ -65,5 +65,6 @@ In that case try this to remove stubborn connections ...
 
 tcpkill host xxx.xxx.xxx.xxx
 
-###  Other useful IpRules
+###  Other useful IPRules  
 
+see FTCForumTools/IPBlocklist/IPRules.txt
