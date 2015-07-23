@@ -502,9 +502,7 @@ iptables -D INPUT -s 	218.87.111.0/24	 -j DROP
 iptables -D INPUT -s 	218.106.254.121	 -j DROP
 iptables -D INPUT -s 	222.186.21.209	 -j DROP
 iptables -D INPUT -s 	218.200.188.213	 -j DROP
-iptables -D INPUT -s 	219.138.135.63	 -j DROP
-iptables -D INPUT -s 	219.138.135.67	 -j DROP
-iptables -D INPUT -s 	219.138.135.71	 -j DROP
+iptables -D INPUT -s 	219.138.135.0/24	 -j DROP
 iptables -D INPUT -s 	219.151.10.194	 -j DROP
 iptables -D INPUT -s 	219.153.15.122	 -j DROP
 iptables -D INPUT -s 	220.177.198.0/24	 -j DROP
