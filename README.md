@@ -13,17 +13,32 @@ The add file contains a line adding each banned IP address, which is run on the 
 
 git clone https://github.com/wrapperband/FTCForumTools   
   
-cd ~/FTCForumTools/IPBlacklist  
+cd ~/FTCForumTools/IPBlocklist  
   
-chmod +x IPBlacklist-add.sh  
+chmod +x IPBlocklist-add.sh  
   
-chmod +x IPBlacklist-drop.sh  
+chmod +x IPBlocklist-drop.sh  
   
 ### To add the bans :  
-sudo ./IPBlacklist-add.sh  
+sudo ./IPBlocklist-add.sh  
 
 ### To clear the bans :  
-sudo ./IPBlacklist-drop.sh  
+sudo ./IPBlocklist-drop.sh  
+
+### To update to the latest banlist
+
+cd ~/FTCForumTools/IPBlocklist  
+
+sudo ./IPBlocklist-drop.sh  
+
+cd ~/FTCForumTools
+
+git remote update
+
+cd ~/FTCForumTools/IPBlocklist  
+
+sudo ./IPBlocklist-add.sh  
+
 
 ###  For information on the ban's status, you can run :
 
