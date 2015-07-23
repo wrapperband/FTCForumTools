@@ -61,9 +61,10 @@ iptables -D INPUT -s 	39.47.0.0/16	 -j DROP
 iptables -D INPUT -s 	39.48.0.0/16	 -j DROP
 iptables -D INPUT -s 	39.50.223.0/24	 -j DROP
 iptables -D INPUT -s 	42.62.17.250	 -j DROP
-iptables -D INPUT -s 	45.62.55.217	 -j DROP
+iptables -D INPUT -s 	45.57.230.0/24	 -j DROP
+iptables -D INPUT -s 	45.62.55.0/24	 -j DROP
 iptables -D INPUT -s 	46.29.249.0/24	 -j DROP
-iptables -D INPUT -s 	46.99.139.34	 -j DROP
+iptables -D INPUT -s 	46.99.139.0/24	 -j DROP
 iptables -D INPUT -s 	46.105.112.6	 -j DROP
 iptables -D INPUT -s 	46.161.41.87	 -j DROP
 iptables -D INPUT -s 	46.243.13.188	 -j DROP
