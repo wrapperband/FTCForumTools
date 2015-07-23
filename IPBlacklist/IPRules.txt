@@ -1,0 +1,19 @@
+
+##  Limit the total conections to a port, 
+
+###  Example for  p2pool ports but may be usefull with other feathercoind or SSH ports :
+
+sudo iptables -A INPUT -p tcp --syn --dport 19327 -m connlimit --connlimit-above 250 -j REJECT
+sudo iptables -A INPUT -p tcp --syn --dport 10554 -m connlimit --connlimit-above 100 -j REJECT
+sudo iptables -L
+
+### Make IPTables changes permenant :
+
+sudo nano /etc/network/if-up.d/bfa_protection
+sudo nano /etc/network/if-down.d/bfa_protection
+
+### Make IPTables changes permenant, method 2 :
+
+apt-get install iptables-persistent
+iptables-save > /etc/iptables/rules.v4
+ip6tables-save > /etc/iptables/rules.v6
