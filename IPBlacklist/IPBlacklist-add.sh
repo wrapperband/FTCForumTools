@@ -243,7 +243,7 @@ iptables -A INPUT -s 	107.150.44.26	 -j DROP
 iptables -A INPUT -s 	107.182.120.242	 -j DROP
 iptables -A INPUT -s 	107.169.224.55	 -j DROP
 iptables -A INPUT -s 	108.61.122.0/24	 -j DROP
-iptables -A INPUT -s 	108.61.122.0/24	 -j DROP
+iptables -A INPUT -s 	108.61.123.0/24	 -j DROP
 iptables -A INPUT -s 	108.171.251.34	 -j DROP
 iptables -A INPUT -s 	108.178.27.242	 -j DROP
 iptables -A INPUT -s 	109.63.56.226	 -j DROP
