@@ -16,7 +16,7 @@ iptables -D INPUT -s 	5.175.176.0/24	 -j DROP
 iptables -D INPUT -s 	5.175.177.0/24	 -j DROP
 iptables -D INPUT -s 	5.175.219.0/24	 -j DROP
 iptables -D INPUT -s 	5.231.76.0/24	 -j DROP
-iptables -D INPUT -s 	5.231.77.82 0/24	 -j DROP
+iptables -D INPUT -s 	5.231.77.0/24	 -j DROP
 iptables -D INPUT -s 	5.255.75.0/24	 -j DROP
 iptables -D INPUT -s 	8.25.14.2	 -j DROP
 iptables -D INPUT -s 	14.0.0.45	 -j DROP
