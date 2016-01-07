@@ -71,14 +71,14 @@ see FTCForumTools/IPBlocklist/IPRules.txt
 
 ### What to do if IPs aren't being blocked? ###
 
-One reason IPs might be getting through is because there are additional rules in place.
+One reason IPs might be getting through is because the  web server has additional rules in place. For instance to redirect traffic.
 
-with the -A option the rules are appended to iptables, and as other rules match the packets never will be blocked by the simple rules.
+With the -A option the rules are appended to iptables, and as other rules match the packets never will be blocked by the simple rules.
 
 You can do a global replace to modified the IPBlocklist-add so the lines look like this:
 
 iptables -I INPUT 5 -s xxx.xxx.xxx.xxx -j DROP
 
 
-This way we keep the first 4 lines in the existing iptables, then reject spam IPs and after that accept regular traffic. You can set your own level appropriatly.
+This way, using -I, we keep the first 4 lines in the existing iptables, then reject spam IPs and after that accept regular traffic. You can set your own level appropriatly, depending how many rules are in place.
 
