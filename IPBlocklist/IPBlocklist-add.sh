@@ -1,3 +1,4 @@
+#!/bin/sh		
 iptables -A INPUT -s 	1.93.26.10	 -j DROP
 iptables -A INPUT -s 	1.93.34.214	 -j DROP
 iptables -A INPUT -s 	1.215.253.186	 -j DROP
@@ -61,8 +62,7 @@ iptables -A INPUT -s 	39.47.0.0/16	 -j DROP
 iptables -A INPUT -s 	39.48.0.0/16	 -j DROP
 iptables -A INPUT -s 	39.50.223.0/24	 -j DROP
 iptables -A INPUT -s 	42.62.17.250	 -j DROP
-iptables -A INPUT -s 	43.248.152.208	 -j DROP
-iptables -A INPUT -s 	43.248.153.199	 -j DROP
+iptables -A INPUT -s 	43.248.152.0/24	 -j DROP
 iptables -A INPUT -s 	45.57.230.0/24	 -j DROP
 iptables -A INPUT -s 	45.62.55.0/24	 -j DROP
 iptables -A INPUT -s 	46.29.249.0/24	 -j DROP
@@ -237,8 +237,8 @@ iptables -A INPUT -s 	103.43.44.150	 -j DROP
 iptables -A INPUT -s 	103.49.174.61	 -j DROP
 iptables -A INPUT -s 	103.55.60.0/24	 -j DROP
 iptables -A INPUT -s 	103.55.61.125	 -j DROP
-iptables -A INPUT -s 	103.243.52.0/24	 -j DROP
 iptables -A INPUT -s 	103.225.191.0/24 -j DROP
+iptables -A INPUT -s 	103.243.52.0/24	 -j DROP
 iptables -A INPUT -s 	104.143.21.0/24	 -j DROP
 iptables -A INPUT -s 	104.144.249.0/24 -j DROP
 iptables -A INPUT -s 	104.144.251.0/24 -j DROP
