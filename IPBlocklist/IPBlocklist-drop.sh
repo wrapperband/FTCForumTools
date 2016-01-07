@@ -239,6 +239,7 @@ iptables -D INPUT 1 -s 	103.55.60.0/24	 -j DROP
 iptables -D INPUT 1 -s 	103.55.61.125	 -j DROP
 iptables -D INPUT 1 -s 	103.225.191.0/24 -j DROP
 iptables -D INPUT 1 -s 	103.243.52.0/24	 -j DROP
+iptables -D INPUT 1 -s 	103.248.172.122	 -j DROP
 iptables -D INPUT 1 -s 	104.143.21.0/24	 -j DROP
 iptables -D INPUT 1 -s 	104.144.249.0/24 -j DROP
 iptables -D INPUT 1 -s 	104.144.251.0/24 -j DROP
