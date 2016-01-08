@@ -70,13 +70,13 @@ see FTCForumTools/IPBlocklist/IPRules.txt
   
 One reason IPs might be getting through is because the  web server has additional rules in place. For instance to redirect traffic.  
   
-With the -A option the rules are appended to iptables, and as other rules match the packets never will be blocked by the simple rules.   
+With the -A option the rules are appended to iptables, and as other rules already in place could pass the traffic (match the packets), further never will be blocked by the simple rules.   
    
-You can do a global replace to modified the IPBlocklist-add so the lines look like this:  
+You can do a global replace to modified the IPBlocklist-add so the lines look like this, so the new rules start at 5 .. :  
    
 iptables -I INPUT 5 -s xxx.xxx.xxx.xxx -j DROP  
   
-This way, using -I, the first 4 lines in the existing iptables are kept, then reject spam IPs as the blocklist is implemented and after that, accept the rest as regular traffic. You can set your own level appropriatly, depending how many other rules are in place.  
+This way, using -I, the first 4 lines in the existing iptables are kept, then reject spam IPs as the blocklist is implemented and after that. Then iptables accepts the rest as regular traffic. You can set your own level appropriatly, depending how many other rules are in place.  
   
 You can change the -I INPUT 1 -s to -A INPUT -s, if you don't need that flexibility.  
   
