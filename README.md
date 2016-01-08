@@ -21,32 +21,30 @@ chmod +x IPBlocklist-drop.sh
   
 ### To add the bans :  
 sudo ./IPBlocklist-add.sh  
-
-### To clear the bans :  
+  
+### To clear the bans :    
 sudo ./IPBlocklist-drop.sh  
-
-### To update to the latest banlist
-
+  
+### To update to the latest banlist  
+  
 cd ~/FTCForumTools/IPBlocklist  
-
+  
 sudo ./IPBlocklist-drop.sh  
-
-cd ~/FTCForumTools
-
-git remote update
-
+  
+cd ~/FTCForumTools  
+  
+git remote update  
+  
 cd ~/FTCForumTools/IPBlocklist  
-
+  
 sudo ./IPBlocklist-add.sh  
-
-
-###  For information on the ban's status, you can run :
-
-sudo iptables -L
-
-
+  
+###  For information on the ban's status, you can run :   
+  
+sudo iptables -L  
+  
 ###  To clear all IPTables bans, if something went wrong :  
-
+  
 iptables -F  
 iptables -X  
 iptables -t nat -F  
@@ -56,29 +54,29 @@ iptables -t mangle -X
 iptables -P INPUT ACCEPT  
 iptables -P FORWARD ACCEPT  
 iptables -P OUTPUT ACCEPT  
-
+   
 ###  To clear stubborn connections :  
-
-Sometimes connections that were made, within a range of IPs, will remain after being banned. If there was some connection in that "IP band" already.
-
+  
+Sometimes connections that were made, within a range of IPs, will remain after being banned. If there was some connection in that "IP band" already.  
 In that case try this to remove stubborn connections ...
-
-tcpkill host xxx.xxx.xxx.xxx
-
-###  Other useful IPRules  
-
-see FTCForumTools/IPBlocklist/IPRules.txt
-
-### What to do if IPs aren't being blocked? ###
-
-One reason IPs might be getting through is because the  web server has additional rules in place. For instance to redirect traffic.
-
-With the -A option the rules are appended to iptables, and as other rules match the packets never will be blocked by the simple rules.
-
-You can do a global replace to modified the IPBlocklist-add so the lines look like this:
-
-iptables -I INPUT 5 -s xxx.xxx.xxx.xxx -j DROP
-
-
-This way, using -I, we keep the first 4 lines in the existing iptables, then reject spam IPs and after that accept regular traffic. You can set your own level appropriatly, depending how many rules are in place.
-
+  
+tcpkill host xxx.xxx.xxx.xxx  
+  
+###  Other useful IPRules   
+  
+see FTCForumTools/IPBlocklist/IPRules.txt  
+  
+### What to do if IPs aren't being blocked?  
+  
+One reason IPs might be getting through is because the  web server has additional rules in place. For instance to redirect traffic.  
+  
+With the -A option the rules are appended to iptables, and as other rules match the packets never will be blocked by the simple rules.   
+   
+You can do a global replace to modified the IPBlocklist-add so the lines look like this:  
+   
+iptables -I INPUT 5 -s xxx.xxx.xxx.xxx -j DROP  
+  
+This way, using -I, the first 4 lines in the existing iptables are kept, then reject spam IPs as the blocklist is implemented and after that, accept the rest as regular traffic. You can set your own level appropriatly, depending how many other rules are in place.  
+  
+You can change the -I INPUT 1 -s to -A INPUT -s, if you don't need that flexibility.  
+  
