@@ -7,7 +7,7 @@ This Blacklist system uses IPTables to provide IP bans. Github is used to ease c
 
 It is a simple system to operate, it does not make the bans permanent. If you need to reboot you will have to create your own script or re apply the banlists manually.
 
-The add file contains a line adding each banned IP address, which is run on the server. The drop file is then run to remove the list, before , say, adding a full updated list. 
+The add file contains a line adding each banned IP address, which is run on the server. The drop file is then run to remove the list, before adding a full updated list, for instance. 
 
 ##  Using the banlist : 
 
